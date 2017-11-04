@@ -12,7 +12,7 @@ r = requests.get(url)
 #store quotes here
 list_of_quotes = []
 
-for i in range(1, 10): #no joke here, website really has only 10 pages
+for i in range(1, 11): #no joke here, website really has only 10 pages
   url = "http://quotes.toscrape.com/page/{}".format(i)
   r = requests.get(url)
   soup = BeautifulSoup(r.content, "lxml") #using lxml will speed things up
