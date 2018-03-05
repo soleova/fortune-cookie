@@ -51,7 +51,7 @@ try:
   app_title = "Fortune Cookie" + " " + heart_symbol 
   root.title(app_title)
   
-  background = PhotoImage(file = "bg.png")
+  background = PhotoImage(file = "assets/bg.png")
   background_label = Label(root, image = background)
   background_label.grid(row = 0)
 
