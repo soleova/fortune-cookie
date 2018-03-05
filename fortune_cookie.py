@@ -17,7 +17,7 @@ try:
   for i in range(1, 11): # no joke here, website really has only 10 pages
     url = "http://quotes.toscrape.com/page/{}".format(i)
     r = requests.get(url)
-    soup = BeautifulSoup(r.content, "lxml") # using lxml will speed things up
+    soup = BeautifulSoup(r.content, "html.parser") 
     # finding all divs with class = quote
     fortune_quotes = soup.find_all("div", class_ = "quote")
   
