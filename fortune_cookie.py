@@ -29,9 +29,9 @@ try:
       # quote is the first item in content
       quote = content[1].text
       # we want our quote to fit the paper in the background pic
-      if (len(quote) < 1000):
-	q = quote + "\n\n" + author.upper()
-	list_of_quotes.append(q)
+      if(len(quote) < 1000):
+        q = quote + "\n\n" + author.upper()
+        list_of_quotes.append(q)
 
   # printing quotes on button click    
   def print_quote():
